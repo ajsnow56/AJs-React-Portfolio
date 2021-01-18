@@ -12,7 +12,7 @@ const UserHeader = ({ user }) => {
       <Header>
         <Image src={user.basics.picture} />
         <div>
-          <h2>{user.basics.name}</h2>
+          <h2 style={{fontFamily: "Blippo, fantasy", color: "black" }}>{user.basics.name}</h2>
           <h4>
             <a
               href={`https://gitconnected.com/${user.basics.username}`}
@@ -23,12 +23,12 @@ const UserHeader = ({ user }) => {
             </a>
           </h4>
           <p>{user.basics.label}</p>
-          <p>Coding in {user.basics.region}</p>
-          <p>
+          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>Coding in {user.basics.region}</p>
+          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>
             {user.basics.yearsOfExperience} years of experience as a developer
           </p>
-          <p>{user.basics.headline}</p>
-          <p>
+          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>{user.basics.headline}</p>
+          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>
             Blog:{" "}
             <a
               href={user.basics.blog}

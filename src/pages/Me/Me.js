@@ -7,11 +7,11 @@ const Me = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle>About Me</SectionTitle>
+        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "black" }}>About Me</SectionTitle>
         <Paragraph>{user.basics.summary}</Paragraph>
       </div>
       <div>
-        <SectionTitle>Skills</SectionTitle>
+        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "black" }}>Skills</SectionTitle>
         <div>
           {user.skills.map((skill) => (
             <Pill key={skill.name}>{skill.name}</Pill>
@@ -19,7 +19,7 @@ const Me = ({ user }) => {
         </div>
       </div>
       <div>
-        <SectionTitle>Profiles</SectionTitle>
+        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "black" }}>Profiles</SectionTitle>
         <ul>
           {user.basics.profiles.map((profile, i) => (
             <ProfileLink key={profile.network}>

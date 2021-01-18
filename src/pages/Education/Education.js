@@ -7,7 +7,7 @@ const Education = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle>Education</SectionTitle>
+        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "black" }}>Education</SectionTitle>
         <ul>
           {user.education.map((education, i) => (
             <EducationItem key={i}>
