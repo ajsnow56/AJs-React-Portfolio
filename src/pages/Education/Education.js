@@ -7,8 +7,8 @@ const Education = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "black" }}>Education</SectionTitle>
-        <ul>
+        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "aqua" }}>Education</SectionTitle>
+        <ul style={{fontFamily: "Blippo, fantasy", color: "aqua" }}>
           {user.education.map((education, i) => (
             <EducationItem key={i}>
               <Institution>{education.institution}</Institution>
@@ -21,7 +21,7 @@ const Education = ({ user }) => {
                   {education.start.year} to {education.end.year}
                 </span>
               </div>
-              <Paragraph>
+              <Paragraph >
                 {education.description.replace("\n\n", "\n")}
               </Paragraph>
             </EducationItem>

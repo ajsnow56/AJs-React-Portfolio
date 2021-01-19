@@ -4,13 +4,13 @@ import Button from "carbon-components-react/lib/components/Button";
 
 export const Container = styled.div`
   display: none;
-  @media (max-width: 480px) {
+  @media (max-width: 240px) {
     display: block;
   }
 `;
 
 export const Spacer = styled.div`
-  height: 48px;
+  height: 36px;
 `;
 
 export const NavWrapper = styled.div`
@@ -24,7 +24,7 @@ export const NavWrapper = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  width: 25%;
+  width: 10%;
 `;
 
 export const NavButton = styled(Button)`

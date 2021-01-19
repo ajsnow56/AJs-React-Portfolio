@@ -23,10 +23,11 @@ const Sidebar = () => {
       expanded
       isChildOfHeader={false}
       aria-label="Side navigation"
+      
     >
       <SideNavItems>
         {items.map((i) => (
-          <SideNavLink
+          <SideNavLink style={{fontFamily: "Blippo, fantasy", color: "black" }}
             isActive={
               location.pathname === "/" && i.path === "/"
                 ? true

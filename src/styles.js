@@ -17,6 +17,6 @@ export const Pill = styled.span`
   padding: 0.5rem 1rem;
   background-color: ${blue[20]};
   color: ${blue[70]};
-  border-radius: 2px;
+  border-radius: 4px;
   font-weight: bold;
 `;

@@ -7,7 +7,7 @@ const Work = ({ user }) => {
   return (
     <Layout user={user}>
       <div>
-        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "black" }}>Work</SectionTitle>
+        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "aqua", fontSize: "50px", textAlign: "center" }}>Work</SectionTitle>
         <ul>
           {user.work.map((work, i) => (
             <WorkItem key={i}>

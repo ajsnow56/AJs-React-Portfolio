@@ -11,10 +11,17 @@ const UserHeader = ({ user }) => {
     <HeaderContainer isHome={location.pathname === "/"}>
       <Header>
         <Image src={user.basics.picture} />
-        <div>
-          <h2 style={{fontFamily: "Blippo, fantasy", color: "black" }}>{user.basics.name}</h2>
+        <div style={{
+                  
+                  backgroundColor: "rgba(0, 0, 0, 0.4)",
+                  borderRadius: "4px",
+                  paddingLeft: "20px",
+                  paddingRight: "20px",
+                  width: "fit-content",
+                }}>
+          <h2 style={{fontFamily: "Blippo, fantasy", color: "white" }}>{user.basics.name}</h2>
           <h4>
-            <a
+            <a style={{fontFamily: "Blippo, fantasy", color: "rgba(50, 50, 180, 1)" }}
               href={`https://gitconnected.com/${user.basics.username}`}
               target="_blank"
               rel="noreferrer noopener"
@@ -23,12 +30,12 @@ const UserHeader = ({ user }) => {
             </a>
           </h4>
           <p>{user.basics.label}</p>
-          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>Coding in {user.basics.region}</p>
-          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>
-            {user.basics.yearsOfExperience} years of experience as a developer
+          <p style={{fontFamily: "Blippo, fantasy", color: "white" }}>Coding in {user.basics.region}</p>
+          <p style={{fontFamily: "Blippo, fantasy", color: "white" }}>
+            {user.basics.yearsOfExperience} I have 1 year of experience as a developer and learning everyday!
           </p>
-          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>{user.basics.headline}</p>
-          <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>
+          <p style={{fontFamily: "Blippo, fantasy", color: "white" }}>{user.basics.headline}</p>
+          {/* <p style={{fontFamily: "Blippo, fantasy", color: "black" }}>
             Blog:{" "}
             <a
               href={user.basics.blog}
@@ -37,7 +44,7 @@ const UserHeader = ({ user }) => {
             >
               {user.basics.blog}
             </a>
-          </p>
+          </p> */}
         </div>
       </Header>
       <div>
@@ -45,6 +52,8 @@ const UserHeader = ({ user }) => {
           href={`https://gitconnected.com/${user.basics.username}/resume`}
           target="_blank"
           rel="noopener noreferrer"
+          style={{backgroundColor: "aqua",
+        color: "black"}}
         >
           <span>View Résumé</span>
           <ArrowRight16 />

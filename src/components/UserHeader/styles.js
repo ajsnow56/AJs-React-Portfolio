@@ -13,6 +13,7 @@ export const Header = styled.div`
   display: flex;
   @media (max-width: 640px) {
     flex-direction: column;
+    
   }
 `;
 
@@ -29,9 +30,10 @@ export const ViewResumeLink = styled.a`
   font-weight: bold;
   align-items: center;
   margin-top: 1rem;
-  border: 2px solid #2ecc40;
+  border: 2px solid #000000;
   background-color: rgba(46, 204, 64, 0.3);
   transition: background-color 250ms ease;
+  
   &:hover {
     background-color: #2ecc40;
   }
