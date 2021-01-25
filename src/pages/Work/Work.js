@@ -1,14 +1,16 @@
-import React from "react";
-import Layout from "../../components/Layout";
-import { SectionTitle, Paragraph } from "../../styles";
-import { WorkItem, WorkTitle, JobTitle } from "./styles";
+// import React from "react";
+// import Layout from "../../components/Layout";
+// import { SectionTitle, Paragraph } from "../../styles";
+// import { WorkItem, WorkTitle, JobTitle } from "./styles";
 
-const Work = ({ user }) => {
-  return (
-    <Layout user={user}>
-      <div>
-        <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "aqua", fontSize: "50px", textAlign: "center" }}>Work</SectionTitle>
-        <ul>
+
+
+// const Work = ({ user }) => {
+//   return (
+//     <Layout user={user}>
+//       <div>
+//         <SectionTitle style={{fontFamily: "Blippo, fantasy", color: "aqua", fontSize: "50px", textAlign: "center" }}>Work</SectionTitle>
+        {/* <ul>
           {user.work.map((work, i) => (
             <WorkItem key={i}>
               <WorkTitle>{work.position}</WorkTitle>
@@ -22,10 +24,10 @@ const Work = ({ user }) => {
               <Paragraph>{work.summary}</Paragraph>
             </WorkItem>
           ))}
-        </ul>
-      </div>
+        </ul> */}
+      {/* </div>
     </Layout>
   );
 };
 
-export default Work;
+export default Work; */}
